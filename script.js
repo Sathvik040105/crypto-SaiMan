@@ -286,9 +286,7 @@ function run(){
     r = (encrypted2.length).toString();
     document.getElementById("encrypted").value = encrypted2+encrypted1;
     document.getElementById("key").value = r+"@"+key;
-
 }*/
-
 /*function padding(input,l){
     let n = l - input.length;
     for(let i=0;i<n;i++){
@@ -296,7 +294,6 @@ function run(){
     }
     return input;
 }
-
 function run(){
     let input = document.getElementById("input").value;
     let keybin = "";
