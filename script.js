@@ -260,7 +260,6 @@ function run2() {
     }
     return input;
 }
-
 function run(){
     let input = document.getElementById("input").value;
     let key = "";
@@ -286,9 +285,7 @@ function run(){
     r = (encrypted2.length).toString();
     document.getElementById("encrypted").value = encrypted2+encrypted1;
     document.getElementById("key").value = r+"@"+key;
-
 }*/
-
 /*function padding(input,l){
     let n = l - input.length;
     for(let i=0;i<n;i++){
@@ -296,7 +293,6 @@ function run(){
     }
     return input;
 }
-
 function run(){
     let input = document.getElementById("input").value;
     let keybin = "";
@@ -754,35 +750,3 @@ function opensubTab() {
 }
 document.getElementById("defaultOpen3").onselect()
 
-  
-
-
-
-
-let linkedinsathvButton = document.getElementById("linkedin-button");
-linkedinsathvButton.addEventListener("click", website);
-  
-let linkedinsaiButton = document.getElementById("linkedin-button1");
-linkedinsaiButton.addEventListener("click", website1);
-
-function website() {
-    window.open("https://www.linkedin.com/in/sathvik-manthri-365984259/");
-}
-
-function website1() {
-    window.open("https://www.linkedin.com/in/nagasai-jajapuram-1b8a73273/");
-}
-
-let gitsathvButton = document.getElementById("git-button");
-gitsathvButton.addEventListener("click", website2);
-  
-let gitsaiButton = document.getElementById("git-button1");
-gitsaiButton.addEventListener("click", website3);
-
-function website2() {
-    window.open("https://github.com/Sathvik040105/");
-}
-
-function website3() {
-    window.open("https://github.com/Nagasai561/");
-}
