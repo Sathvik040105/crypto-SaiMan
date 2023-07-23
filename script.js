@@ -260,7 +260,6 @@ function run2() {
     }
     return input;
 }
-
 function run(){
     let input = document.getElementById("input").value;
     let key = "";
