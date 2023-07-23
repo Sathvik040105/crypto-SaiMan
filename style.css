@@ -360,39 +360,7 @@ img {
     font-size: 65%;
 }
 
-#linkedin-button {
-    background-color: rgb(240, 247, 241);
-    color: rgb(3, 3, 2);
-    border: none;
-    border-radius: 50%;
-    padding: 0px;
-    font-size: 31px;
-    margin-top: 2vw;
-    cursor: pointer;
-}
 
-#linkedin-button1 {
-    background-color: rgb(240, 247, 241);
-    color: rgb(3, 3, 2);
-    border: none;
-    border-radius: 50%;
-    padding: 0px;
-    font-size: 31px;
-    margin-top: 2vw;
-    cursor: pointer;
-}
-
-
-#git-button {
-    background-color: rgb(240, 247, 241);
-    color: rgb(3, 3, 2);
-    border: none;
-    border-radius: 50%;
-    padding: 0px;
-    font-size: 31px;
-    margin-top: 2vw;
-    cursor: pointer;
-}
 
 #image4 img {
     image-rendering: auto;
@@ -407,16 +375,6 @@ img {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);  
 }
 
-#git-button1 {
-    background-color: rgb(240, 247, 241);
-    color: rgb(3, 3, 2);
-    border: none;
-    border-radius: 50%;
-    padding: 0px;
-    font-size: 31px;
-    margin-top: 2vw;
-    cursor: pointer;
-}
 
 
 * {box-sizing: border-box;}
