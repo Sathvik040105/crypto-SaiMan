@@ -756,9 +756,6 @@ document.getElementById("defaultOpen3").onselect()
 
   
 
-
-
-
 let linkedinsathvButton = document.getElementById("linkedin-button");
 linkedinsathvButton.addEventListener("click", website);
   
