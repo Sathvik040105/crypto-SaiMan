@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">   
+<button class="tablink" onclick="openPage('Home', this, 'orange')" id="defaultOpen" style="border: 0.5px solid black;">Home</button>
+<button class="tablink" onclick="openPage('WhatandHow', this, 'green')" style="border: 0.5px solid black;">What & How?</button>
+<button class="tablink" onclick="openPage('AboutUs', this, 'purple')" style="border: 0.5px solid black;">About Us</button>
+
+
+
+<div id="Home" class="tabcontent">
+
+    <div id="image"><img src="DBD_logo.png"></div>
+
+    
+    <head>
+    <title>SaiMan</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body background="Saimanbackground.webp"></body>
+    <p>
+    <img src="S.jpg">
+    </p>
+
+    
+
+
+
+    <br>
+        
+    <br>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <button class="tab2" onclick="openTab('Text', this, 'white')" id="defaultOpen2" style="border: 0.5px solid black; border-radius: 50px;">Text</button>
+    <button class="tab2" onclick="openTab('Image', this, 'white')" style="border: 0.5px solid black; border-radius: 20px;">Image</button>
+            
+    <br>
+    <br>
+    <br>
+
+    <hr
+    style="border: 0;
+    margin-left: 0%;
+    height: 2px;
+    width: 50%;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #fefbfb, #ccc);">
+        
+    <br>
+            
+    <div id="Text" class="tab2content">
+        <p1>
+            
+            <p7 style="font-size: larger;"><u>Select the type of key you need: </u></p7>
+
+            <br>
+            <br>
+
+            <label for="keytype"><p7 style="text-align: left; color: #82beff; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Choose key type:</p7></label>
+            <select id="myDropdown" onchange="opensubTab()">
+                <option value="subpage0">Select</option>
+                <option value="subpage1"> System generated</option>
+                <option value="subpage2">User generated</option>
+            </select>
+            
+            <br>
+            <br>
+            <div id="contentcontainer">
+                <div id="subpage0content" class="subpagecontent">
+                    <p10 style="background-color: #0000008a;">Select one option in the above dropdown for generating a key according to your interest.</p10> 
+                </div>
+                <div id="subpage1content" class="subpagecontent">
+                    <p9>
+                        <b><u>For Encrypting your text</u></b>
+                    </p9>
+                    <br>
+                
+                    <div class="fields-container"> <!--This code makes three boxes, out of which only one box is editable and rest all are readonly-->  
+                        <div>
+                            Enter you text here :
+                            <textarea type="text" id="input" hspace="10" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></textarea>
+                            <br>
+                
+                            <button id="input-button"><b>Done</b></button>
+                    
+                        </div>
+                        <div>
+                            <div>
+                                Encrypted text :
+                                <textarea type="text" id="encrypted" readonly hspace="10"  style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></textarea>
+                            </div>
+                            <br>
+                            <div>
+                                Key :
+                                <textarea type="text" id="key" readonly hspace="10"  style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="restart-button"><b>Restart</b></button>
+                        </div>
+                    </div> 
+                
+                
+                    <hr
+                        style="border: 0;
+                        height: 1px;
+                        background: #333;
+                        background-image: linear-gradient(to right, #ccc, #fefbfb, #ccc);">
+                    
+                
+                
+                    <p9>
+                        <b><u>For Decrypting your text</u></b>
+                    </p9>
+                        
+                    <br>
+                
+                    <div class="fields-container"> <!--This code makes three boxes, out of which only one box is editable and rest all are readonly-->  
+                        <div>
+                            Enter you Encrypted text here :
+                            <textarea type="text" id="input2" hspace="10"  style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></textarea>
+                            <br><br>
+                                Enter your key here :
+                            <textarea type="text" id="&key" hspace="10"  style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></textarea>
+                            <br>
+                            <button id="input-button2"><b>Done</b></button>
+                
+                        </div>
+                        <div>
+                            <div>
+                                Your Decrypted text :
+                                <textarea type="text" id="decrypted" readonly hspace="10"  style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="restart-button2"><b>Restart</b></button>
+                        </div>
+                    </div> 
+                
+                
+                    <hr
+                        style="border: 0;
+                        height: 1px;
+                        background: #333;
+                        background-image: linear-gradient(to right, #ccc, #fefbfb, #ccc);">
+                </div>
+
+                <div id="subpage2content" class="subpagecontent">
+                    <p9>
+                        <b><u>For Encrypting your text</u></b>
+                    </p9>
+                    <br>
+                
+                    <div class="fields-container"> <!--This code makes three boxes, out of which only one box is editable and rest all are readonly-->  
+                        <div>
+                            Enter you text here :
+                            <textarea type="text" id="input5" hspace="10" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></textarea>
+                            <br>
+                            <br>
+                            
+                    
+                        </div>
+                        <div>
+                            Enter your key here :
+                            <textarea type="text" id="key3" hspace="10"  style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></textarea>
+                            <br>
+                            <button id="input-button5"><b>Done</b></button>
+
+                        </div>
+                        <div>
+                            <div>
+                                Encrypted text :
+                                <textarea type="text" id="encrypted3" readonly hspace="10"  style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></textarea>
+                            </div>
+                            <br>
+
+                        </div>
+                        <div>
+                            <button id="restart-button5"><b>Restart</b></button>
+                        </div>
+                    </div> 
+                
+                
+                    <hr
+                        style="border: 0;
+                        height: 1px;
+                        background: #333;
+                        background-image: linear-gradient(to right, #ccc, #fefbfb, #ccc);">
+                    
+                
+                
+                    <p9>
+                        <b><u>For Decrypting your text</u></b>
+                    </p9>
+                        
+                    <br>
+                
+                    <div class="fields-container"> <!--This code makes three boxes, out of which only one box is editable and rest all are readonly-->  
+                        <div>
+                            Enter you Encrypted text here :
+                            <textarea type="text" id="input6" hspace="10"  style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></textarea>
+                            <br><br>
+                                Enter your key here :
+                            <textarea type="text" id="&key3" hspace="10"  style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></textarea>
+                            <br>
+                            <button id="input-button6"><b>Done</b></button>
+                
+                        </div>
+                        <div>
+                            <div>
+                                Your Decrypted text :
+                                <textarea type="text" id="decrypted3" readonly hspace="10"  style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="restart-button6"><b>Restart</b></button>
+                        </div>
+                    </div> 
+                
+                
+                    <hr
+                        style="border: 0;
+                        height: 1px;
+                        background: #333;
+                        background-image: linear-gradient(to right, #ccc, #fefbfb, #ccc);">
+                </div>
+            </div>           
+        </p1>
+    </div>
+
+    <div id="Image" class="tab2content">
+        <p1>
+            <p9>
+                <b><u>For Encrypting your image</u></b>
+            </p9>
+            <br>
+            
+                <div class="fields-container"> <!--This code makes three boxes, out of which only one box is editable and rest all are readonly-->  
+                    <div>
+                        Enter you image here :
+                        <input type="file" id="input3" hspace="10">
+                        
+                        <br>
+            
+                        <button id="input-button3"><b>Done</b></button>
+                
+                    </div>
+                    <div>
+                        <div>
+                            Encrypted image:
+                            <input type="image" id="encrypted2" readonly hspace="10" src="">
+                        </div>
+                        <br>
+                        <div>
+                            Key :
+                            <textarea type="text" id="key2" readonly hspace="10"></textarea>
+                            <button id="copybutton"><b>Copy</b></button>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="restart-button3"><b>Restart</b></button>
+                    </div>
+                </div> 
+            
+            
+                <hr
+                    style="border: 0;
+                    height: 1px;
+                    background: #333;
+                    background-image: linear-gradient(to right, #ccc, #fefbfb, #ccc);">
+                
+            
+            
+                <p9>
+                    <b><u>For Decrypting your image</u></b>
+                </p9>
+                    
+                <br>
+            
+                <div class="fields-container"> <!--This code makes three boxes, out of which only one box is editable and rest all are readonly-->  
+                    <div>
+                        Enter you Encrypted text here :
+                        <input type="file" id="input4" hspace="10">
+                        <br><br>
+                            Enter your key here :
+                        <textarea type="text" id="&key2" hspace="10"></textarea>
+                        <br>
+                        <button id="input-button4"><b>Done</b></button>
+            
+                    </div>
+                    <div>
+                        <div>
+                            Your Decrypted image :
+                            <input type="image" id="decrypted2" readonly hspace="10" src="">
+                        </div>
+                    </div>
+                    <div>
+                        <button id="restart-button4"><b>Restart</b></button>
+                    </div>
+                </div> 
+            
+            
+                <hr
+                    style="border: 0;
+                    height: 1;
+                    background: #333;
+                    background-image: linear-gradient(to right, #ccc, #fefbfb, #ccc);">
+        </p1>            
+
+    </div>
+        
+        
+</div>
+
+<div id="WhatandHow" class="tabcontent">
+
+    <div id="image"><img src="smlogo.jpg"></img></div>
+
+    <p2>
+    <h1><b><u>What & How?</u></b></h1>
+    
+    <div class = "declaration">
+        <div class = "medium-text" style="background-color: #000000; font-size: large;color:rgb(227, 230, 125);border-color: azure;border-width: 20px;">
+                <p>Introducing Saiman, a powerful tool designed to enhance the security and privacy of your text messages. With Saiman, you can transform your regular text into an encrypted sequence of diverse characters, ensuring that your messages remain confidential. Additionally, Saiman provides you with a unique security key, enabling you to decrypt the text whenever needed, ensuring secure communication between individuals. Our mission is to facilitate the secure transfer of important messages, offering a reliable solution for safeguarding your information and promoting confidentiality in your digital conversations.
+                    <style>
+                        p {
+                        font-size: 22px;
+                        text-indent: 40px;
+                        text-align: auto;
+                        letter-spacing: 1px;
+                        color: rgb(76, 220, 220);
+                        }
+                    </style>
+                </p>
+        </div> 
+    </div>
+    </p2>
+</div>
+
+<div id="AboutUs" class="tabcontent">
+
+    <div id="image"><img src="smlogo.jpg"></img></div>
+
+    <p4>
+        <h2>CONTACT US</h2>
+        <div class = "declaration">
+            <div class = "medium-text" style="background-color: #0a0f1c90; font-size: large;color:rgb(42, 216, 26);border-color: rgb(79, 216, 216);border-width: 20px; border-radius: 5%; text-align: center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+                    <p> <b>EMAIL ID:;</b> nagasaij@iisc.ac.in ; sathvikm@iisc.ac.in</p>
+            </div>
+    </p4>
+
+    <p5>
+        <h2><b>OUR TEAM</b></h2>
+        <div class = "declaration">
+            <div class = "medium-text" style="background-color: #0a0f1c90; font-size: xx-large;color:rgb(189, 236, 81);border-color: rgb(76, 220, 220);border-width: 20px; border-radius: 5%; text-align: center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+                    <p5> 
+                        <b><u>Sathvik</u></b>
+                         <br>
+                         <br>
+                         <img src="aboutusvikku.jpg">
+                         <button id="linkedin-button"><div id="image4"><img src="linkedin.jpg"></img></div></button></a>                       
+                         <button id="git-button"><div id="image4"><img src="github.jpeg"></img></div></button></a>
+                         <br>
+                         <hr>
+                          <b><u>Nagasai</u></b>
+                          <br><br>
+                          <img src="aboutusai.jpg">
+                          <button id="linkedin-button1"><div id="image4"><img src="linkedin.jpg"></img></div></button>
+                          <button id="git-button1"><div id="image4"><img src="github.jpeg"></img></div></button>
+                    </p5>
+            </div>
+    </p5>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+<script src="script.js"></script>
+</html>
