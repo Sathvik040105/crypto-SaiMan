@@ -482,7 +482,7 @@ function shuffleArray(array) {
     // Read the uploaded image file as data URL
     reader.readAsDataURL(image);
   }
-  
+
 
 function unshuffleArray(array, string) {
     // Parse the indices from the 'string'
